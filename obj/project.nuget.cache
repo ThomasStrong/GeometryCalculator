@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gc8WQEAbqmLP7JYslBIKeRWYmf5XDEzaS5anUIJ2nHRy6bu7clTc6LMfSvJEk69hnVD4r1IIwLmfUD9bbCuiaw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tom\\code\\Geometry_Calculator\\Geometry_Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
