@@ -6,7 +6,7 @@ namespace Geometry_Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to the Awesome, Amazing, Alliterative Geometry Calculator!");
         }
     }
 }
