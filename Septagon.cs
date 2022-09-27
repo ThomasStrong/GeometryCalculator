@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Geometry_Calculator
 {
@@ -32,14 +29,14 @@ namespace Geometry_Calculator
             var septP = septSides.Split(' ');
             if (septP.Length == 7)
             {
-                var septX = Int32.Parse(septP[0]);
-                var septY = Int32.Parse(septP[1]);
-                var septZ = Int32.Parse(septP[2]);
-                var septA = Int32.Parse(septP[3]);
-                var septB = Int32.Parse(septP[4]);
-                var septC = Int32.Parse(septP[5]);
-                var septD = Int32.Parse(septP[6]);
-                int septPerimeter = septX + septY + septZ + septA + septB + septC + septD;
+                var septX = Decimal.Parse(septP[0]);
+                var septY = Decimal.Parse(septP[1]);
+                var septZ = Decimal.Parse(septP[2]);
+                var septA = Decimal.Parse(septP[3]);
+                var septB = Decimal.Parse(septP[4]);
+                var septC = Decimal.Parse(septP[5]);
+                var septD = Decimal.Parse(septP[6]);
+                decimal septPerimeter = septX + septY + septZ + septA + septB + septC + septD;
                 Console.WriteLine("The perimeter of your septagon is: " + septPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }

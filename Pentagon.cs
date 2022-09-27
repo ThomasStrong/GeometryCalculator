@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Geometry_Calculator
 {
@@ -16,7 +12,7 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We will determine the area of your pentagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to leave foul suggestions in their inbox.");
+            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to try again, or type 'Exit' to leave foul suggestions in their inbox.");
         }
 
         public static void CalcPerimeter()
@@ -27,12 +23,12 @@ namespace Geometry_Calculator
             var pentaP = pentaSides.Split(' ');
             if (pentaP.Length == 5)
             {
-                var pentaX = Int32.Parse(pentaP[0]);
-                var pentaY = Int32.Parse(pentaP[1]);
-                var pentaZ = Int32.Parse(pentaP[2]);
-                var pentaA = Int32.Parse(pentaP[3]);
-                var pentaB = Int32.Parse(pentaP[4]);
-                int pentaPerimeter = pentaX + pentaY + pentaZ + pentaA + pentaB;
+                var pentaX = Decimal.Parse(pentaP[0]);
+                var pentaY = Decimal.Parse(pentaP[1]);
+                var pentaZ = Decimal.Parse(pentaP[2]);
+                var pentaA = Decimal.Parse(pentaP[3]);
+                var pentaB = Decimal.Parse(pentaP[4]);
+                decimal pentaPerimeter = pentaX + pentaY + pentaZ + pentaA + pentaB;
                 Console.WriteLine("The perimeter of your triangle is: " + pentaPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }

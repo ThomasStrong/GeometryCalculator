@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Geometry_Calculator
 {
@@ -25,17 +21,17 @@ namespace Geometry_Calculator
 
             if (quadHW.Length == 2)
             {
-                var quadH = Int32.Parse(quadHW[0]);
-                var quadW = Int32.Parse(quadHW[1]);
-                int quadArea = quadH * quadW;
+                var quadH = Decimal.Parse(quadHW[0]);
+                var quadW = Decimal.Parse(quadHW[1]);
+                decimal quadArea = quadH * quadW;
                 Console.WriteLine("The area of your rectangle is: " + quadArea + " squared units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
             else if (quadHW.Length == 1)
             {
-                var quadSquare = Int32.Parse(quadHW[0]);
+                var quadSquare = Decimal.Parse(quadHW[0]);
 
-                int squareArea = quadSquare * quadSquare;
+                decimal squareArea = quadSquare * quadSquare;
                 Console.WriteLine("The area of your rectangle is: " + squareArea + " squared units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
@@ -53,26 +49,26 @@ namespace Geometry_Calculator
             var quadP = quadPerimeter.Split(' ');
             if (quadP.Length == 1)
             {
-                var squareSide = Int32.Parse(quadP[0]);
-                int squarePerimeter = squareSide * 4;
+                var squareSide = Decimal.Parse(quadP[0]);
+                decimal squarePerimeter = squareSide * 4;
                 Console.WriteLine("The perimeter of your square is: " + squarePerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
             else if (quadP.Length == 2)
             {
-                var rectH = Int32.Parse(quadP[0]);
-                var rectW = Int32.Parse(quadP[1]);
-                int rectPerimeter = rectH * 2 + rectW * 2;
+                var rectH = Decimal.Parse(quadP[0]);
+                var rectW = Decimal.Parse(quadP[1]);
+                decimal rectPerimeter = rectH * 2 + rectW * 2;
                 Console.WriteLine("The perimeter of your rectangle is: " + rectPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
             else if (quadP.Length == 4)
             {
-                var quadOne = Int32.Parse(quadP[0]);
-                var quadTwo = Int32.Parse(quadP[1]);
-                var quadThree = Int32.Parse(quadP[2]);
-                var quadFour = Int32.Parse(quadP[3]);
-                int quadPerim = quadOne + quadTwo + quadThree + quadFour;
+                var quadOne = Decimal.Parse(quadP[0]);
+                var quadTwo = Decimal.Parse(quadP[1]);
+                var quadThree = Decimal.Parse(quadP[2]);
+                var quadFour = Decimal.Parse(quadP[3]);
+                decimal quadPerim = quadOne + quadTwo + quadThree + quadFour;
                 Console.WriteLine("The perimeter of your quadrilateral is: " + quadPerim + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }

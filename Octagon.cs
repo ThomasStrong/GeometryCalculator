@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Geometry_Calculator
 {
@@ -32,15 +28,15 @@ namespace Geometry_Calculator
             var octP = octSides.Split(' ');
             if (octP.Length == 8)
             {
-                var octX = Int32.Parse(octP[0]);
-                var octY = Int32.Parse(octP[1]);
-                var octZ = Int32.Parse(octP[2]);
-                var octA = Int32.Parse(octP[3]);
-                var octB = Int32.Parse(octP[4]);
-                var octC = Int32.Parse(octP[5]);
-                var octD = Int32.Parse(octP[6]);
-                var octE = Int32.Parse(octP[7]);
-                int octPerimeter = octX + octY + octZ + octA + octB + octC + octD + octE;
+                var octX = Decimal.Parse(octP[0]);
+                var octY = Decimal.Parse(octP[1]);
+                var octZ = Decimal.Parse(octP[2]);
+                var octA = Decimal.Parse(octP[3]);
+                var octB = Decimal.Parse(octP[4]);
+                var octC = Decimal.Parse(octP[5]);
+                var octD = Decimal.Parse(octP[6]);
+                var octE = Decimal.Parse(octP[7]);
+                decimal octPerimeter = octX + octY + octZ + octA + octB + octC + octD + octE;
                 Console.WriteLine("The perimeter of your octagon is: " + octPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }

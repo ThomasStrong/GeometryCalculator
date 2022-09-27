@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Geometry_Calculator
 {
@@ -30,13 +26,13 @@ namespace Geometry_Calculator
             var hexP = hexSides.Split(' ');
             if (hexP.Length == 6)
             {
-                var hexX = Int32.Parse(hexP[0]);
-                var hexY = Int32.Parse(hexP[1]);
-                var hexZ = Int32.Parse(hexP[2]);
-                var hexA = Int32.Parse(hexP[3]);
-                var hexB = Int32.Parse(hexP[4]);
-                var hexC = Int32.Parse(hexP[5]);
-                int hexPerimeter = hexX + hexY + hexZ + hexA + hexB + hexC;
+                var hexX = Decimal.Parse(hexP[0]);
+                var hexY = Decimal.Parse(hexP[1]);
+                var hexZ = Decimal.Parse(hexP[2]);
+                var hexA = Decimal.Parse(hexP[3]);
+                var hexB = Decimal.Parse(hexP[4]);
+                var hexC = Decimal.Parse(hexP[5]);
+                decimal hexPerimeter = hexX + hexY + hexZ + hexA + hexB + hexC;
                 Console.WriteLine("The perimeter of your hexagon is: " + hexPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }

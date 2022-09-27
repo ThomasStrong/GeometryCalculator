@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Geometry_Calculator
 {
@@ -33,16 +29,16 @@ namespace Geometry_Calculator
             var nonP = nonSides.Split(' ');
             if (nonP.Length == 9)
             {
-                var nonX = Int32.Parse(nonP[0]);
-                var nonY = Int32.Parse(nonP[1]);
-                var nonZ = Int32.Parse(nonP[2]);
-                var nonA = Int32.Parse(nonP[3]);
-                var nonB = Int32.Parse(nonP[4]);
-                var nonC = Int32.Parse(nonP[5]);
-                var nonD = Int32.Parse(nonP[6]);
-                var nonE = Int32.Parse(nonP[7]);
-                var nonF = Int32.Parse(nonP[8]);
-                int nonPerimeter = nonX + nonY + nonZ + nonA + nonB + nonC + nonD + nonE + nonF;
+                var nonX = Decimal.Parse(nonP[0]);
+                var nonY = Decimal.Parse(nonP[1]);
+                var nonZ = Decimal.Parse(nonP[2]);
+                var nonA = Decimal.Parse(nonP[3]);
+                var nonB = Decimal.Parse(nonP[4]);
+                var nonC = Decimal.Parse(nonP[5]);
+                var nonD = Decimal.Parse(nonP[6]);
+                var nonE = Decimal.Parse(nonP[7]);
+                var nonF = Decimal.Parse(nonP[8]);
+                decimal nonPerimeter = nonX + nonY + nonZ + nonA + nonB + nonC + nonD + nonE + nonF;
                 Console.WriteLine("The perimeter of your nonagon is: " + nonPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
