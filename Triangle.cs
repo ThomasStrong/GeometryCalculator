@@ -22,9 +22,9 @@ namespace Geometry_Calculator
 
             if (factorsHW.Length == 2)
             {
-                var triangleH = Int32.Parse(factorsHW[0]);
-                var triangleW = Int32.Parse(factorsHW[1]);
-                int triangleArea = triangleH * triangleW / 2;
+                var triangleH = Decimal.Parse(factorsHW[0]);
+                var triangleW = Decimal.Parse(factorsHW[1]);
+                decimal triangleArea = triangleH * triangleW / 2;
                 Console.WriteLine("The area of your triangle is: " + triangleArea + " squared units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
@@ -42,10 +42,10 @@ namespace Geometry_Calculator
             var factorsP = triangleSides.Split(' ');
             if (factorsP.Length == 3)
             {
-                var triangleX = Int32.Parse(factorsP[0]);
-                var triangleY = Int32.Parse(factorsP[1]);
-                var triangleZ = Int32.Parse(factorsP[2]);
-                int trianglePerimeter = triangleX + triangleY + triangleZ;
+                var triangleX = Decimal.Parse(factorsP[0]);
+                var triangleY = Decimal.Parse(factorsP[1]);
+                var triangleZ = Decimal.Parse(factorsP[2]);
+                decimal trianglePerimeter = triangleX + triangleY + triangleZ;
                 Console.WriteLine("The perimeter of your triangle is: " + trianglePerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
             }
@@ -60,10 +60,12 @@ namespace Geometry_Calculator
             switch (TriangleMethod)
             {
                 case "Area":
-                    Triangle.CalcArea();
+                    CalcArea();
                     break;
                 case "Perimeter":
-                    Triangle.CalcPerimeter();
+                    CalcPerimeter();
+                    break;
+                default:
                     break;
             }
         }
