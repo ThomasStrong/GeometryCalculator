@@ -26,12 +26,12 @@ namespace Geometry_Calculator
             var hexP = hexSides.Split(' ');
             if (hexP.Length == 6)
             {
-                var hexX = Decimal.Parse(hexP[0]);
-                var hexY = Decimal.Parse(hexP[1]);
-                var hexZ = Decimal.Parse(hexP[2]);
-                var hexA = Decimal.Parse(hexP[3]);
-                var hexB = Decimal.Parse(hexP[4]);
-                var hexC = Decimal.Parse(hexP[5]);
+                var hexX = decimal.Parse(hexP[0]);
+                var hexY = decimal.Parse(hexP[1]);
+                var hexZ = decimal.Parse(hexP[2]);
+                var hexA = decimal.Parse(hexP[3]);
+                var hexB = decimal.Parse(hexP[4]);
+                var hexC = decimal.Parse(hexP[5]);
                 decimal hexPerimeter = hexX + hexY + hexZ + hexA + hexB + hexC;
                 Console.WriteLine("The perimeter of your hexagon is: " + hexPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");

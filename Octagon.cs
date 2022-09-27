@@ -28,14 +28,14 @@ namespace Geometry_Calculator
             var octP = octSides.Split(' ');
             if (octP.Length == 8)
             {
-                var octX = Decimal.Parse(octP[0]);
-                var octY = Decimal.Parse(octP[1]);
-                var octZ = Decimal.Parse(octP[2]);
-                var octA = Decimal.Parse(octP[3]);
-                var octB = Decimal.Parse(octP[4]);
-                var octC = Decimal.Parse(octP[5]);
-                var octD = Decimal.Parse(octP[6]);
-                var octE = Decimal.Parse(octP[7]);
+                var octX = decimal.Parse(octP[0]);
+                var octY = decimal.Parse(octP[1]);
+                var octZ = decimal.Parse(octP[2]);
+                var octA = decimal.Parse(octP[3]);
+                var octB = decimal.Parse(octP[4]);
+                var octC = decimal.Parse(octP[5]);
+                var octD = decimal.Parse(octP[6]);
+                var octE = decimal.Parse(octP[7]);
                 decimal octPerimeter = octX + octY + octZ + octA + octB + octC + octD + octE;
                 Console.WriteLine("The perimeter of your octagon is: " + octPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");

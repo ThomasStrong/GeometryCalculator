@@ -23,11 +23,11 @@ namespace Geometry_Calculator
             var pentaP = pentaSides.Split(' ');
             if (pentaP.Length == 5)
             {
-                var pentaX = Decimal.Parse(pentaP[0]);
-                var pentaY = Decimal.Parse(pentaP[1]);
-                var pentaZ = Decimal.Parse(pentaP[2]);
-                var pentaA = Decimal.Parse(pentaP[3]);
-                var pentaB = Decimal.Parse(pentaP[4]);
+                var pentaX = decimal.Parse(pentaP[0]);
+                var pentaY = decimal.Parse(pentaP[1]);
+                var pentaZ = decimal.Parse(pentaP[2]);
+                var pentaA = decimal.Parse(pentaP[3]);
+                var pentaB = decimal.Parse(pentaP[4]);
                 decimal pentaPerimeter = pentaX + pentaY + pentaZ + pentaA + pentaB;
                 Console.WriteLine("The perimeter of your triangle is: " + pentaPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");

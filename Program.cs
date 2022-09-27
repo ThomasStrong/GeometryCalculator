@@ -24,7 +24,7 @@ namespace Geometry_Calculator
 
                 Console.WriteLine("How many sides to the shape you are working with? (1-9, or 0 for Other)");
                 string sides = Console.ReadLine();
-                int numberSides = Int32.Parse(sides);
+                int numberSides = int.Parse(sides);
                 Console.WriteLine("Fantastic!  Now, let's see...");
                 ShapeSelector.ShapeHandler(numberSides);
 

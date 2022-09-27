@@ -29,15 +29,15 @@ namespace Geometry_Calculator
             var nonP = nonSides.Split(' ');
             if (nonP.Length == 9)
             {
-                var nonX = Decimal.Parse(nonP[0]);
-                var nonY = Decimal.Parse(nonP[1]);
-                var nonZ = Decimal.Parse(nonP[2]);
-                var nonA = Decimal.Parse(nonP[3]);
-                var nonB = Decimal.Parse(nonP[4]);
-                var nonC = Decimal.Parse(nonP[5]);
-                var nonD = Decimal.Parse(nonP[6]);
-                var nonE = Decimal.Parse(nonP[7]);
-                var nonF = Decimal.Parse(nonP[8]);
+                var nonX = decimal.Parse(nonP[0]);
+                var nonY = decimal.Parse(nonP[1]);
+                var nonZ = decimal.Parse(nonP[2]);
+                var nonA = decimal.Parse(nonP[3]);
+                var nonB = decimal.Parse(nonP[4]);
+                var nonC = decimal.Parse(nonP[5]);
+                var nonD = decimal.Parse(nonP[6]);
+                var nonE = decimal.Parse(nonP[7]);
+                var nonF = decimal.Parse(nonP[8]);
                 decimal nonPerimeter = nonX + nonY + nonZ + nonA + nonB + nonC + nonD + nonE + nonF;
                 Console.WriteLine("The perimeter of your nonagon is: " + nonPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
