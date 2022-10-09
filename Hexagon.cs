@@ -16,7 +16,12 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We should determine the area of your hexagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to leave foul suggestions in their inbox.");
+            Console.WriteLine("What is the side length of your regular hexagon?");
+            string sideLengthString = Console.ReadLine();
+            double sideLength = double.Parse(sideLengthString);
+            double hexArea = (3 * Math.Sqrt(3) / 2) * Math.Pow(sideLength, 2);
+            Console.WriteLine("The area of your regular hexagon is: " + Math.Round(hexArea, 2) + " units.  (Rounded to hundredths)");
+            Console.WriteLine("That'll do.  Press Enter, or type 'Exit'.");
         }
 
         public static void CalcPerimeter()
