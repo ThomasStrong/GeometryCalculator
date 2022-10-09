@@ -10,7 +10,7 @@ namespace Geometry_Calculator
         public static void Intro()
         {
             Console.Clear();
-            Console.WriteLine("The infamous seven-sided triangle!  Just kidding, we're looking at a septagon.  But why?");
+            Console.WriteLine("The infamous seven-sided triangle!  Just kidding, we're looking at a septagon (or heptagon if that makes you heppy).  But why?");
             Console.WriteLine("Don't see many of these.  Need?  (Area, Perimeter)");
         }
 
@@ -19,7 +19,13 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We should determine the area of your septagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to leave foul suggestions in their inbox.");
+            Console.WriteLine("What is the side length of your regular septagon?");
+            string sideLengthString = Console.ReadLine();
+            double sideLength = double.Parse(sideLengthString);
+            double septCoefficient = 3.634;
+            double septArea = septCoefficient * Math.Pow(sideLength, 2);
+            Console.WriteLine("The area of your regular hexagon is: " + Math.Round(septArea, 2) + " units.  (Rounded to hundredths)");
+            Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
         }
 
         public static void CalcPerimeter()
@@ -39,7 +45,7 @@ namespace Geometry_Calculator
                 var septD = decimal.Parse(septP[6]);
                 decimal septPerimeter = septX + septY + septZ + septA + septB + septC + septD;
                 Console.WriteLine("The perimeter of your septagon is: " + septPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
+                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
             }
             else
             {

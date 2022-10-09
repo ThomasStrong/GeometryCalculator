@@ -18,7 +18,12 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We should determine the area of your octagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to leave foul suggestions in their inbox.");
+            Console.WriteLine("What is the side length of your regular octagon?");
+            string sideLengthString = Console.ReadLine();
+            double sideLength = double.Parse(sideLengthString);
+            double octArea = (2 * Math.Pow(sideLength, 2)) * (1 + Math.Sqrt(2));
+            Console.WriteLine("The area of your regular octagon is: " + Math.Round(octArea, 2) + " units.  (Rounded to hundredths)");
+            Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
         }
 
         public static void CalcPerimeter()
@@ -39,7 +44,7 @@ namespace Geometry_Calculator
                 var octE = decimal.Parse(octP[7]);
                 decimal octPerimeter = octX + octY + octZ + octA + octB + octC + octD + octE;
                 Console.WriteLine("The perimeter of your octagon is: " + octPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
+                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
             }
             else
             {

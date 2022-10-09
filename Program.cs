@@ -22,11 +22,11 @@ namespace Geometry_Calculator
                 if (counter != 1)
                 {
                     Console.WriteLine("Press Enter to continue, or type 'Exit' to close this amazing program.");
-                    line = Console.ReadLine();
+                    line = Console.ReadLine().ToLower();
                 }
 
                 Console.WriteLine("How many sides to the shape you are working with? (1-9, or 0 for Other)");
-                string sides = Console.ReadLine();
+                string sides = Console.ReadLine().ToLower();
                 bool CanParseSides = int.TryParse(sides, out int numberSides);
                 if (CanParseSides)
                 {
@@ -41,7 +41,7 @@ namespace Geometry_Calculator
 
 
 
-            } while ((line = Console.ReadLine()) != "Exit");
+            } while ((line = Console.ReadLine()) != "exit");
         }
     }
 }

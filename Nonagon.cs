@@ -10,7 +10,7 @@ namespace Geometry_Calculator
         {
             Console.Clear();
             Console.WriteLine("Nonagons (also enneagons) makes me think it's a none-sided shape.  Anyway, shall we?");
-            Console.WriteLine("I think we can do something with you nonagon! (Area, Perimeter)");
+            Console.WriteLine("I think we can do something with your nonagon! (Area, Perimeter)");
         }
 
 
@@ -18,8 +18,14 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We should determine the area of your nonagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to leave foul suggestions in their inbox.");
-            Console.ReadLine();
+            Console.WriteLine("What is the side length of your regular nonagon?");
+            string sideLengthString = Console.ReadLine();
+            double sideLength = double.Parse(sideLengthString);
+            double nonagonCoefficientA = 2.25;
+            double nonagonCoefficientB = 2.74747741;
+            double octArea = (nonagonCoefficientA * Math.Pow(sideLength, 2)) * nonagonCoefficientB;
+            Console.WriteLine("The area of your regular nonagon is: " + Math.Round(octArea, 2) + " units.  (Rounded to hundredths)");
+            Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
         }
 
         public static void CalcPerimeter()
@@ -41,7 +47,7 @@ namespace Geometry_Calculator
                 var nonF = decimal.Parse(nonP[8]);
                 decimal nonPerimeter = nonX + nonY + nonZ + nonA + nonB + nonC + nonD + nonE + nonF;
                 Console.WriteLine("The perimeter of your nonagon is: " + nonPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
+                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
             }
             else
             {
