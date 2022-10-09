@@ -15,7 +15,12 @@ namespace Geometry_Calculator
         public static void CalcArea()
         {
             Console.WriteLine("We will determine the area of your pentagon.");
-            Console.WriteLine("Just kidding!  My architect has not given me this power yet.  Press Enter to try again, or type 'Exit' to leave foul suggestions in their inbox.");
+            Console.WriteLine("What is the side length of your regular pentagon?");
+            string sideLengthString = Console.ReadLine();
+            double sideLength = double.Parse(sideLengthString);
+            double pentaArea = 0.25 * Math.Sqrt(5 * (5 + 2 * Math.Sqrt(5))) * Math.Pow(sideLength, 2);
+            Console.WriteLine("The area of your pentagon is: " + Math.Round(pentaArea, 2) + " units.  (Rounded to hundredths)");
+            Console.WriteLine("That'll do.  Press Enter, or type 'Exit'");
         }
 
         public static void CalcPerimeter()
@@ -32,8 +37,8 @@ namespace Geometry_Calculator
                 var pentaA = decimal.Parse(pentaP[3]);
                 var pentaB = decimal.Parse(pentaP[4]);
                 decimal pentaPerimeter = pentaX + pentaY + pentaZ + pentaA + pentaB;
-                Console.WriteLine("The perimeter of your triangle is: " + pentaPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to leave and begin again!");
+                Console.WriteLine("The perimeter of your pentagon is: " + pentaPerimeter + " units.");
+                Console.WriteLine("That'll do.  Press Enter, or type 'Exit'");
             }
             else
             {
