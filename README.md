@@ -34,8 +34,8 @@ Instructions for running this console application are forthcoming.
 
 - Add calc of internal angles for equiangulars
 - Figure out higher math for more area calculations involving square roots, etc.
-- Separate the concerns
-- Have app loop through
+- ~~Separate the concerns~~
+- ~~Have app loop through~~
   <br></br>
 
 ## Questions?
