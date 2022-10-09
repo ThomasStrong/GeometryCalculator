@@ -17,7 +17,10 @@ namespace Geometry_Calculator
             string name = Console.ReadLine();
 
             Console.WriteLine("Great, thanks " + name + "!");
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("||***||WE ARE LEGION||***||");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ResetColor();
             Console.WriteLine("Uhh *cough* that is- I mean , um, let's get some things out of the way.");
             Console.WriteLine(" ");
             Console.WriteLine("While we are supreme entities, we do have limits.  We only really like shapes with lesser sides and we can not read your mind.");

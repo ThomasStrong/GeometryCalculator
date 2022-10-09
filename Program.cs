@@ -6,6 +6,9 @@ namespace Geometry_Calculator
     {
         static void Main(string[] args)
         {
+            Console.Title = "Awesome, Amazing, Alliterative Geometry Calculator";
+            Console.ForegroundColor = ConsoleColor.White;
+
             int counter = 0;
             if (counter == 0)
             {
