@@ -8,6 +8,7 @@ namespace Geometry_Calculator
 
         public static void Intro()
         {
+            Console.Clear();
             Console.WriteLine("Mmm, hexagons.  Reminds me of-  well, hexagons I suppose.");
             Console.WriteLine("I can think of a few things to do with a hexagon.... You?  (Area, Perimeter)");
         }
@@ -46,10 +47,10 @@ namespace Geometry_Calculator
         {
             switch (HexaMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

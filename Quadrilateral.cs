@@ -8,6 +8,7 @@ namespace Geometry_Calculator
 
         public static void Intro()
         {
+            Console.Clear();
             Console.WriteLine("Well, this quadrilateral could be a square or rectangle.  So, we will assume so, thanks.");
             Console.WriteLine("What'll we do with this fancy four-faced figure? (Area, Perimeter)");
         }
@@ -82,10 +83,10 @@ namespace Geometry_Calculator
         {
             switch (QuadMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

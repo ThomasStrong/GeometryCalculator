@@ -6,8 +6,11 @@ namespace Geometry_Calculator
     {
         public string TriangleMethod { get; set; }
 
-        public static void Intro() =>
+        public static void Intro()
+        {
+            Console.Clear();
             Console.WriteLine("A triangle!  Yes, we like triangles.  What shall we do? (Area, Perimeter)");
+        }
 
         public static void CalcArea()
         {
@@ -55,10 +58,10 @@ namespace Geometry_Calculator
         {
             switch (TriangleMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

@@ -20,7 +20,7 @@ namespace Geometry_Calculator
             {
                 case "10":
                     Console.WriteLine("The majestic decagon!  That is a big one.");
-                    Console.WriteLine("At this time I can only tell you very little stuff.  Like its name.  Goddbye!");
+                    Console.WriteLine("At this time I can only tell you very little stuff.  Like its name.  Goodbye!");
                     break;
                 case "11":
                     Console.WriteLine("This is a hendecagon.  No chickens here, though.");

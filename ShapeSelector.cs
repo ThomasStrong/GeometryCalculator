@@ -23,43 +23,43 @@ namespace Geometry_Calculator
                 case 3:
                     Triangle triangle = new();
                     Triangle.Intro();
-                    triangle.TriangleMethod = Console.ReadLine();
+                    triangle.TriangleMethod = Console.ReadLine().ToLower();
                     Triangle.TriangleMethodHandler(triangle.TriangleMethod);
                     break;
                 case 4:
                     Quadrilateral quadrilateral = new();
                     Quadrilateral.Intro();
-                    quadrilateral.QuadMethod = Console.ReadLine();
+                    quadrilateral.QuadMethod = Console.ReadLine().ToLower();
                     Quadrilateral.QuadMethodHandler(quadrilateral.QuadMethod);
                     break;
                 case 5:
                     Pentagon pentagon = new();
                     Pentagon.Intro();
-                    pentagon.PentaMethod = Console.ReadLine();
+                    pentagon.PentaMethod = Console.ReadLine().ToLower();
                     Pentagon.PentaMethodHandler(pentagon.PentaMethod);
                     break;
                 case 6:
                     Hexagon hexagon = new();
                     Hexagon.Intro();
-                    hexagon.HexaMethod = Console.ReadLine();
+                    hexagon.HexaMethod = Console.ReadLine().ToLower();
                     Hexagon.HexagonMethodHandler(hexagon.HexaMethod);
                     break;
                 case 7:
                     Septagon septagon = new();
                     Septagon.Intro();
-                    septagon.SeptaMethod = Console.ReadLine();
+                    septagon.SeptaMethod = Console.ReadLine().ToLower();
                     Septagon.SeptaMethodHandler(septagon.SeptaMethod);
                     break;
                 case 8:
                     Octagon octagon = new();
                     Octagon.Intro();
-                    octagon.OctaMethod = Console.ReadLine();
+                    octagon.OctaMethod = Console.ReadLine().ToLower();
                     Octagon.OctaMethodHandler(octagon.OctaMethod);
                     break;
                 case 9:
                     Nonagon nonagon = new();
                     Nonagon.Intro();
-                    nonagon.NonaMethod = Console.ReadLine();
+                    nonagon.NonaMethod = Console.ReadLine().ToLower();
                     Nonagon.NonaMethodHandler(nonagon.NonaMethod);
                     break;
                 case 0:

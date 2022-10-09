@@ -9,6 +9,7 @@ namespace Geometry_Calculator
 
         public static void Intro()
         {
+            Console.Clear();
             Console.WriteLine("The infamous seven-sided triangle!  Just kidding, we're looking at a septagon.  But why?");
             Console.WriteLine("Don't see many of these.  Need?  (Area, Perimeter)");
         }
@@ -50,10 +51,10 @@ namespace Geometry_Calculator
         {
             switch (SeptaMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

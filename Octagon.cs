@@ -8,6 +8,7 @@ namespace Geometry_Calculator
 
         public static void Intro()
         {
+            Console.Clear();
             Console.WriteLine("Octagon and done it again!");
             Console.WriteLine("What are we doing with this eight-sided polygon? (Area, Perimeter)");
         }
@@ -50,10 +51,10 @@ namespace Geometry_Calculator
         {
             switch (OctaMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

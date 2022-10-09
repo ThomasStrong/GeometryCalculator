@@ -8,6 +8,7 @@ namespace Geometry_Calculator
 
         public static void Intro()
         {
+            Console.Clear();
             Console.WriteLine("Nonagons (also enneagons) makes me think it's a none-sided shape.  Anyway, shall we?");
             Console.WriteLine("I think we can do something with you nonagon! (Area, Perimeter)");
         }
@@ -52,10 +53,10 @@ namespace Geometry_Calculator
         {
             switch (NonaMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:

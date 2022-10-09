@@ -6,8 +6,11 @@ namespace Geometry_Calculator
     {
         public string PentaMethod { get; set; }
 
-        public static void Intro() =>
+        public static void Intro()
+        {
+            Console.Clear();
             Console.WriteLine("Pentagons really are underrated.  What shall we figure? (Area, Perimeter)");
+        }
 
         public static void CalcArea()
         {
@@ -42,10 +45,10 @@ namespace Geometry_Calculator
         {
             switch (PentaMethod)
             {
-                case "Area":
+                case "area":
                     CalcArea();
                     break;
-                case "Perimeter":
+                case "perimeter":
                     CalcPerimeter();
                     break;
                 default:
