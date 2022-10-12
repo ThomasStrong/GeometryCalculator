@@ -57,7 +57,7 @@ namespace Geometry_Calculator
             Thread.Sleep(500);
             AnsiConsole.Markup("At this time we also assume anything larger than a quadrilateral is a [red]regular polygon[/].\n");
             Console.WriteLine(" ");
-            Console.WriteLine("Press [[[Enter]]] so that I know you read all of that.");
+            Console.WriteLine("Press [Enter] so that I know you read all of that.");
             Console.ReadLine();
         }
 
