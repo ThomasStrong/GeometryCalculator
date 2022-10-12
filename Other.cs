@@ -9,9 +9,18 @@ namespace Geometry_Calculator
     class Other
     {
         public string Method { get; set; }
+        public static string OtherOptionsMenu()
+        {
+            string otherOptionsTitle = "Ahh, more than nine sides can be interesting.  Is it 10, 11, or 12-sided?";
+            string[] otherOptions =
+            {
+                "10", "11", "12"
+            };
 
-        public static void Intro() =>
-            Console.WriteLine("Ahh, more than nine sides can be interesting.  Is it 10, 11, or 12-sided?");
+            string otherMethods = MainIntro.UserMenu(otherOptionsTitle, otherOptions);
+            return otherMethods;
+        }
+
 
         public static void OtherMethodHandler(string otherMethods)
         {

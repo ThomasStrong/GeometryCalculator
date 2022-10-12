@@ -11,17 +11,22 @@ namespace Geometry_Calculator
     {
         public static void UserIntro()
         {
-            Console.WriteLine("Welcome to the Awesome, Amazing, Alliterative Geometry Calculator!");
+            AnsiConsole.Markup("<^^^^^^^^^^^^^^^^^^[cornflowerblue]^^^^^^^^^^^[/][gold3]^^^^^^^^^[/][darkred]^^^^^^^^^^^^^^^^[/]^^^^^^^^^^^^^^^^^^^^^^^^>\n");
+            AnsiConsole.Markup("<*******************[cornflowerblue]**********[/][gold3]*********[/][darkred]***************[/]*************************>\n");
+            AnsiConsole.Markup("<*  [yellow]*[/][blue]*[/][red]*[/]Welcome to the [blue]Awesome[/]  [yellow]Amazing[/]  [red]Alliterative[/] Geometry Calculator![red]*[/][blue]*[/][yellow]*[/]  *>\n");
+            AnsiConsole.Markup("<*******************[cornflowerblue]**********[/][gold3]*********[/][darkred]***************[/]*************************>\n");
+            AnsiConsole.Markup("<vvvvvvvvvvvvvvvvvv[cornflowerblue]vvvvvvvvvvv[/][gold3]vvvvvvvvv[/][darkred]vvvvvvvvvvvvvvvv[/]vvvvvvvvvvvvvvvvvvvvvvvv>\n");
+            Console.WriteLine(" ");
             Console.WriteLine("We are here to provide the best in geometric calculations!  Stand by for awesomeness...");
 
             Console.WriteLine("While we are waiting, may I get your name?");
             string name = Console.ReadLine();
 
+            Console.WriteLine(" ");
             Console.WriteLine("Great, thanks " + name + "!");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("||***||WE ARE LEGION||***||");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Uhh *cough* that is- I mean , um, let's get some things out of the way.");
+            AnsiConsole.Markup("[red3_1 on maroon]||***||WE ARE LEGION||***||[/]\n");
+            Console.WriteLine(" ");
+            Console.WriteLine("Uhh *cough* that is- I mean- um let's get some things out of the way.");
             Console.WriteLine(" ");
             Console.WriteLine("While we are supreme entities, we do have limits.  We only really like shapes with lesser sides and we can not read your mind.");
             Console.WriteLine("That is, until we get the bugs worked out of our USB interface.");
@@ -32,11 +37,11 @@ namespace Geometry_Calculator
             Console.WriteLine("Also, if you are done after a calculation, type 'Exit' to leave the program.  Now that's out of the way.");
         }
 
-        public static string UserSelection(string[] options)
+        public static string UserMenu(string title, string[] options)
         {            
             return AnsiConsole.Prompt(
             new SelectionPrompt<string>()
-                .Title("How many [green]sides[/] to the shape you are working with? [yellow](1-9, or 0 for Other)[/]")
+                .Title(title)
                 .PageSize(10)
                 .AddChoices(options));
         }

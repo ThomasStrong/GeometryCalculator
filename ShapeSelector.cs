@@ -13,11 +13,11 @@ namespace Geometry_Calculator
             switch (numberSides)
             {
                 case 1:
-                    Console.WriteLine("Ahh yes, a bright point illuminating a field of darkness.  Anyway, we doin' shapes?");
+                    Console.WriteLine("Ahh yes, a bright line illuminating a field of darkness.  Anyway, we doin' shapes?");
                     Console.WriteLine("You can always press Enter to leave and try your luck once more!");
                     break;
                 case 2:
-                    Console.WriteLine("You have found the quickest way from point A to point B.  Or, one side of an as yet unknown shape, but that's not quite enough.");
+                    Console.WriteLine("You have found the quickest way to form a V!  Congrats!");
                     Console.WriteLine("Hows about you press Enter to rerun the simulation.");
                     break;
                 case 3:
@@ -63,9 +63,7 @@ namespace Geometry_Calculator
                     Nonagon.NonaMethodHandler(nonagon.NonaMethod);
                     break;
                 case 0:
-                    Other.Intro();
-                    string otherMethods = Console.ReadLine();
-                    Other.OtherMethodHandler(otherMethods);
+                    Other.OtherMethodHandler(Other.OtherOptionsMenu());
                     break;
                 default:
                     Console.WriteLine("Incorrect input.  Broken now - ");
