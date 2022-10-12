@@ -11,7 +11,7 @@ namespace Geometry_Calculator
         public string Method { get; set; }
 
         public static void Intro() =>
-            Console.WriteLine("Ahh, more than nine sides can be interesting.  Is it 10, 11, or 12 sided?");
+            Console.WriteLine("Ahh, more than nine sides can be interesting.  Is it 10, 11, or 12-sided?");
 
         public static void OtherMethodHandler(string otherMethods)
         {

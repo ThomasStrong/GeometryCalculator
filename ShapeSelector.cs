@@ -63,7 +63,7 @@ namespace Geometry_Calculator
                     Nonagon.NonaMethodHandler(nonagon.NonaMethod);
                     break;
                 case 0:
-
+                    Other.Intro();
                     string otherMethods = Console.ReadLine();
                     Other.OtherMethodHandler(otherMethods);
                     break;

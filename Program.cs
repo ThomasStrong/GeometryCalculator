@@ -1,4 +1,5 @@
 ﻿using System;
+using Spectre.Console;
 
 namespace Geometry_Calculator
 {
@@ -25,8 +26,19 @@ namespace Geometry_Calculator
                     line = Console.ReadLine().ToLower();
                 }
 
-                Console.WriteLine("How many sides to the shape you are working with? (1-9, or 0 for Other)");
-                string sides = Console.ReadLine().ToLower();
+                /* Console.WriteLine("How many sides to the shape you are working with? (1-9, or 0 for Other)");
+                string sides = Console.ReadLine().ToLower(); */
+
+                string sides = AnsiConsole.Prompt(
+                    new SelectionPrompt<string>()
+                        .Title("How many [green]sides[/] to the shape you are working with? [yellow](1-9, or 0 for Other)[/]")
+                        .PageSize(3)
+                        .AddChoices(new[] {
+                            "1", "2", "3", 
+                            "4", "5", "6",
+                            "7", "8", "9", "0"
+                        }));                
+
                 bool CanParseSides = int.TryParse(sides, out int numberSides);
                 if (CanParseSides)
                 {
