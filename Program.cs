@@ -10,6 +10,7 @@ namespace Geometry_Calculator
 
             Console.Title = "Awesome, Amazing, Alliterative Geometry Calculator";
             Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
             ExitConditional exitCondition = new();
             exitCondition.ToExit = false;
 

@@ -22,10 +22,12 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 ## Instructions
 
 - Clone this Repository:  Using the green 'Code' button above clone the repo to your local machine.
-- Open the file in Visual Studio (or preferred IDE).
+- Open the file Geometry_Calculator.sln in Visual Studio (or preferred IDE).
+    * **Note: In Visual Studio, you can select: Open > 'Open a Project or Solution'; 
+              Or navigate to the file in your file explorer, right-click and choose 'Open in Visual Studio'.
 - Run Debug to begin the appliciation.
-    * **Note:You may need to right-click Geometry_Calculator.sln and choose 'Set as Startup Project' before running Debug.
-        (In Visual Studio, you can select the .sln file from the Run-Debug drop-down)
+    
+        
     
 
 ## Technologies
