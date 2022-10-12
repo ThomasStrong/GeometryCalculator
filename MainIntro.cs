@@ -31,5 +31,14 @@ namespace Geometry_Calculator
             Console.WriteLine(" ");
             Console.WriteLine("Also, if you are done after a calculation, type 'Exit' to leave the program.  Now that's out of the way.");
         }
+
+        public static string UserSelection(string[] options)
+        {            
+            return AnsiConsole.Prompt(
+            new SelectionPrompt<string>()
+                .Title("How many [green]sides[/] to the shape you are working with? [yellow](1-9, or 0 for Other)[/]")
+                .PageSize(10)
+                .AddChoices(options));
+        }
     }
 }
