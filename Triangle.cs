@@ -12,7 +12,7 @@ namespace Geometry_Calculator
             Console.Clear();
             Console.WriteLine("A triangle!  Yes, we like triangles.  What shall we do? (Area, Perimeter)");
             AnsiConsole.Markup("AREA:  1/2[yellow]H[/][blue]W[/]   PERIMETER:  [blue]S[/]+[blue]S[/]+[blue]S[/]    \n");
-            AnsiConsole.Markup("                           \n");
+            AnsiConsole.Markup(" \n");
             AnsiConsole.Markup("  [yellow]H->[/]  /[yellow]|[/]\\         [blue]S->  /[/]\\   \n");
             AnsiConsole.Markup("  [blue]W->[/] / [yellow]|[/] \\            [blue]/[/]  \\  \n");
             AnsiConsole.Markup("     /[blue]__[/][yellow]|[/][blue]__[/]\\          [blue]/[/]____\\ \n");

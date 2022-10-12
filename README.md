@@ -36,6 +36,7 @@ Instructions for running this console application are forthcoming.
 - ~~Figure out higher math for more area calculations involving square roots, etc.~~
 - ~~Separate the concerns~~
 - ~~Have app loop through~~
+- Fix exit conditions
   <br></br>
 
 ## Questions?
