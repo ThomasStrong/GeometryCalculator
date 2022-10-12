@@ -25,6 +25,7 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 - Open the file in Visual Studio (or preferred IDE).
 - Run Debug to begin the appliciation.
     * **Note:You may need to right-click Geometry_Calculator.sln and choose 'Set as Startup Project' before running Debug.
+        (In Visual Studio, you can select the .sln file from the Run-Debug drop-down)
     
 
 ## Technologies
