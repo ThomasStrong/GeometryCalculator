@@ -15,16 +15,16 @@ Console program for calculating certain geometric equations.
 
 ## Overview
 
-Geometry Calculator - This app is designed to find the area, perimeter, etc. for polygons of differing number of sides.
+Geometry Calculator - This app is designed to find the area, perimeter, etc. for polygons of differing numbers of sides.
 
   <br></br>
 
 ## Instructions
 
-- Clone this Repository:  Using the green 'Code' button above close the repo to your local machine.
+- Clone this Repository:  Using the green 'Code' button above clone the repo to your local machine.
 - Open the file in Visual Studio (or preferred IDE).
 - Run Debug to begin the appliciation.
-    * You may need to right-click Geometry_Calculator.sln and choose 'Set as Startup Project' before running Debug.
+    * **Note:You may need to right-click Geometry_Calculator.sln and choose 'Set as Startup Project' before running Debug.
     
 
 ## Technologies
@@ -32,6 +32,8 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 - C# <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C sharp" width="5%" />      
 
 - .NET <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="dot Net" width="5%" />
+
+- Spectr.Console Package
           
 
 ## Future Development
@@ -40,7 +42,7 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 - ~~Figure out higher math for more area calculations involving square roots, etc.~~
 - ~~Separate the concerns~~
 - ~~Have app loop through~~
-- Fix exit conditions
+- ~~Fix exit conditions~~
   <br></br>
 
 ## Questions?
