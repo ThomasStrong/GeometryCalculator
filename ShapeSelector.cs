@@ -66,7 +66,7 @@ namespace Geometry_Calculator
                     Other.OtherMethodHandler(Other.OtherOptionsMenu(), exitCondition);
                     break;
                 default:
-                    
+                    Console.WriteLine("Whoa, whoa.... How did we end up here? We are not sure what you did....");
                     break;
             }
         }
