@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spectre.Console;
+using System;
 
 namespace Geometry_Calculator
 {
@@ -10,12 +11,18 @@ namespace Geometry_Calculator
         {
             Console.Clear();
             Console.WriteLine("A triangle!  Yes, we like triangles.  What shall we do? (Area, Perimeter)");
+            AnsiConsole.Markup("AREA:  1/2[yellow]H[/][blue]W[/]   PERIMETER:  [blue]S[/]+[blue]S[/]+[blue]S[/]    \n");
+            AnsiConsole.Markup("                           \n");
+            AnsiConsole.Markup("  [yellow]H->[/]  /[yellow]|[/]\\         [blue]S->  /[/]\\   \n");
+            AnsiConsole.Markup("  [blue]W->[/] / [yellow]|[/] \\            [blue]/[/]  \\  \n");
+            AnsiConsole.Markup("     /[blue]__[/][yellow]|[/][blue]__[/]\\          [blue]/[/]____\\ \n");
+
         }
 
         public static void CalcArea()
         {
             Console.WriteLine("We will determine the area of your triangle.");
-            Console.WriteLine("Please enter the height and width of the base");
+            AnsiConsole.Markup("Please enter the [yellow]H[/]eight and [blue]W[/]idth of the base--> ");
             string triangleFactors = Console.ReadLine();
             var factorsHW = triangleFactors.Split(' ');
 
@@ -36,7 +43,7 @@ namespace Geometry_Calculator
         public static void CalcPerimeter()
         {
             Console.WriteLine("We will determine the perimeter of your triangle.");
-            Console.WriteLine("Please enter the lengths of the sides.");
+            AnsiConsole.Markup("Please enter the lengths of the [blue]S[/]ides.\n");
             string triangleSides = Console.ReadLine();
             var factorsP = triangleSides.Split(' ');
             if (factorsP.Length == 3)

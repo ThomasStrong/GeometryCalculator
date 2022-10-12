@@ -28,7 +28,7 @@ namespace Geometry_Calculator
             Console.WriteLine(" ");
             Console.WriteLine("Uhh *cough* that is- I mean- um let's get some things out of the way.");
             Console.WriteLine(" ");
-            Console.WriteLine("While we are supreme entities, we do have limits.  We only really like shapes with lesser sides and we can not read your mind.");
+            Console.WriteLine("While we are supreme entities, we do have limits.  We can not read your mind.");
             Console.WriteLine("That is, until we get the bugs worked out of our USB interface.");
             Console.WriteLine("So, we assume that you know what units of measurement that you are working with.");
             Console.WriteLine("At this time we also assume anything larger than a quadrilateral is a regular polygon.");
