@@ -21,7 +21,10 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 
 ## Instructions
 
-Instructions for running this console application are forthcoming.
+- Clone this Repository:  Using the green 'Code' button above close the repo to your local machine.
+- Open the file in Visual Studio (or preferred IDE).
+- Run Debug to begin the appliciation.
+    
 
 ## Technologies
 
