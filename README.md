@@ -33,7 +33,7 @@ Geometry Calculator - This app is designed to find the area, perimeter, etc. for
 
 - .NET <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="dot Net" width="5%" />
 
-- Spectr.Console Package
+- Spectre.Console Package
           
 
 ## Future Development
