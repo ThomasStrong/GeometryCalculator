@@ -25,7 +25,7 @@ namespace Geometry_Calculator
             {
                 if (counter != 1)
                 {
-                    Console.WriteLine("Press Enter to continue, or type 'Exit' to close this amazing program.");
+                    Console.WriteLine("Press [[Enter]] to continue, or type 'Exit' to close this amazing program.");
                     string line = Console.ReadLine().ToLower();
                     if (line == "exit")
                     {

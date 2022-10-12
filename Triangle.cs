@@ -32,11 +32,11 @@ namespace Geometry_Calculator
                 var triangleW = decimal.Parse(factorsHW[1]);
                 decimal triangleArea = triangleH * triangleW / 2;
                 Console.WriteLine("The area of your triangle is: " + triangleArea + " squared units.");
-                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+                Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
             }
             else
             {
-                Console.WriteLine("We were almost there!  Press Enter to leave and begin again!");
+                Console.WriteLine("We were almost there!  Press [Enter] to leave and begin again!");
             }
         }
 
@@ -53,11 +53,11 @@ namespace Geometry_Calculator
                 var triangleZ = decimal.Parse(factorsP[2]);
                 decimal trianglePerimeter = triangleX + triangleY + triangleZ;
                 Console.WriteLine("The perimeter of your triangle is: " + trianglePerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+                Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
             }
             else
             {
-                Console.WriteLine("Nope.... Press Enter to stop and restart!");
+                Console.WriteLine("Nope.... Press [Enter] to stop and restart!");
             }
         }
 

@@ -35,7 +35,7 @@ namespace Geometry_Calculator
                 case "11":
                     Console.WriteLine(" ");
                     AnsiConsole.Markup("This is a [yellow]hendecagon[/].  No chickens here, though.");
-                    Console.WriteLine("For another little nugget press Enter to leave and try another one!");
+                    Console.WriteLine("For another little nugget press [Enter] to leave and try another one!");
                     Console.WriteLine(" ");
                     break;
                 case "12":

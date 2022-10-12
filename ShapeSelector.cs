@@ -14,11 +14,11 @@ namespace Geometry_Calculator
             {
                 case 1:
                     Console.WriteLine("Ahh yes, a bright line illuminating a field of darkness.  Anyway, we doin' shapes?");
-                    Console.WriteLine("You can always press Enter to leave and try your luck once more!");
+                    Console.WriteLine("You can always press [Enter] to leave and try your luck once more!");
                     break;
                 case 2:
                     Console.WriteLine("You have found the quickest way to form a V!  Congrats!");
-                    Console.WriteLine("Hows about you press Enter to rerun the simulation.");
+                    Console.WriteLine("Hows about you press [Enter] to rerun the simulation.");
                     break;
                 case 3:
                     Triangle triangle = new();

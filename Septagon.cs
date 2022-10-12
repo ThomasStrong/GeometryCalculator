@@ -25,7 +25,7 @@ namespace Geometry_Calculator
             double septCoefficient = 3.634;
             double septArea = septCoefficient * Math.Pow(sideLength, 2);
             Console.WriteLine("The area of your regular hexagon is: " + Math.Round(septArea, 2) + " units.  (Rounded to hundredths)");
-            Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+            Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
         }
 
         public static void CalcPerimeter()
@@ -45,11 +45,11 @@ namespace Geometry_Calculator
                 var septD = decimal.Parse(septP[6]);
                 decimal septPerimeter = septX + septY + septZ + septA + septB + septC + septD;
                 Console.WriteLine("The perimeter of your septagon is: " + septPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+                Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
             }
             else
             {
-                Console.WriteLine("Yeah, sorry.  I need 7 numbers for that.  Press Enter to leave.");
+                Console.WriteLine("Yeah, sorry.  I need 7 numbers for that.  Press [Enter] to leave.");
             }
         }
 

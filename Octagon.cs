@@ -23,7 +23,7 @@ namespace Geometry_Calculator
             double sideLength = double.Parse(sideLengthString);
             double octArea = (2 * Math.Pow(sideLength, 2)) * (1 + Math.Sqrt(2));
             Console.WriteLine("The area of your regular octagon is: " + Math.Round(octArea, 2) + " units.  (Rounded to hundredths)");
-            Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+            Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
         }
 
         public static void CalcPerimeter()
@@ -44,11 +44,11 @@ namespace Geometry_Calculator
                 var octE = decimal.Parse(octP[7]);
                 decimal octPerimeter = octX + octY + octZ + octA + octB + octC + octD + octE;
                 Console.WriteLine("The perimeter of your octagon is: " + octPerimeter + " units.");
-                Console.WriteLine("That'll do.  Press Enter to continue, or type 'Exit' to leave.");
+                Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
             }
             else
             {
-                Console.WriteLine("That was almost the number of numbers I was hoping to enumerate.  Press Enter to leave.");
+                Console.WriteLine("That was almost the number of numbers I was hoping to enumerate.  Press [Enter] to leave.");
             }
         }
 
