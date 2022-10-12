@@ -61,7 +61,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void TriangleMethodHandler(string TriangleMethod)
+        public static void TriangleMethodHandler(string TriangleMethod, ExitConditional exitCondition)
         {
             switch (TriangleMethod)
             {
@@ -70,6 +70,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

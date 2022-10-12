@@ -52,7 +52,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void OctaMethodHandler(string OctaMethod)
+        public static void OctaMethodHandler(string OctaMethod, ExitConditional exitCondition)
         {
             switch (OctaMethod)
             {
@@ -61,6 +61,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

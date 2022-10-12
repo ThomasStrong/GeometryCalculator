@@ -79,7 +79,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void QuadMethodHandler(string QuadMethod)
+        public static void QuadMethodHandler(string QuadMethod, ExitConditional exitCondition)
         {
             switch (QuadMethod)
             {
@@ -88,6 +88,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

@@ -46,7 +46,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void PentaMethodHandler(string PentaMethod)
+        public static void PentaMethodHandler(string PentaMethod, ExitConditional exitCondition)
         {
             switch (PentaMethod)
             {
@@ -55,6 +55,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

@@ -8,13 +8,12 @@ namespace Geometry_Calculator
 {
     class Other
     {
-        public string Method { get; set; }
         public static string OtherOptionsMenu()
         {
             string otherOptionsTitle = "Ahh, more than nine sides can be interesting.  Is it 10, 11, or 12-sided?";
             string[] otherOptions =
             {
-                "10", "11", "12"
+                "10", "11", "12", "Exit"
             };
 
             string otherMethods = MainIntro.UserMenu(otherOptionsTitle, otherOptions);
@@ -22,9 +21,9 @@ namespace Geometry_Calculator
         }
 
 
-        public static void OtherMethodHandler(string otherMethods)
+        public static void OtherMethodHandler(string otherMethods, ExitConditional exitCondition)
         {
-
+            otherMethods.ToLower();
             switch (otherMethods)
             {
                 case "10":
@@ -38,6 +37,9 @@ namespace Geometry_Calculator
                 case "12":
                     Console.WriteLine("The dirty-dozen-sided dodecagon, eh?  Some call them duodecagons, but I'm not one of them.");
                     Console.WriteLine("Press enter for a baker's dozen!  That's the extent of my knowledge.");
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
             }
         }

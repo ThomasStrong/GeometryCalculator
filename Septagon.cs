@@ -53,7 +53,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void SeptaMethodHandler(string SeptaMethod)
+        public static void SeptaMethodHandler(string SeptaMethod, ExitConditional exitCondition)
         {
             switch (SeptaMethod)
             {
@@ -62,6 +62,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

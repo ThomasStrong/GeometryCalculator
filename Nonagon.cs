@@ -55,7 +55,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void NonaMethodHandler(string NonaMethod)
+        public static void NonaMethodHandler(string NonaMethod, ExitConditional exitCondition)
         {
             switch (NonaMethod)
             {
@@ -64,6 +64,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;

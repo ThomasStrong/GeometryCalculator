@@ -48,7 +48,7 @@ namespace Geometry_Calculator
             }
         }
 
-        public static void HexagonMethodHandler(string HexaMethod)
+        public static void HexagonMethodHandler(string HexaMethod, ExitConditional exitCondition)
         {
             switch (HexaMethod)
             {
@@ -57,6 +57,9 @@ namespace Geometry_Calculator
                     break;
                 case "perimeter":
                     CalcPerimeter();
+                    break;
+                case "exit":
+                    exitCondition.ToExit = true;
                     break;
                 default:
                     break;
