@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Spectre.Console;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,22 +24,27 @@ namespace Geometry_Calculator
 
         public static void OtherMethodHandler(string otherMethods, ExitConditional exitCondition)
         {
-            otherMethods.ToLower();
             switch (otherMethods)
             {
                 case "10":
-                    Console.WriteLine("The majestic decagon!  That is a big one.");
+                    Console.WriteLine(" ");
+                    AnsiConsole.Markup("The majestic [yellow]decagon[/]!  That is a big one.");
                     Console.WriteLine("At this time I can only tell you very little stuff.  Like its name.  Goodbye!");
+                    Console.WriteLine(" ");
                     break;
                 case "11":
-                    Console.WriteLine("This is a hendecagon.  No chickens here, though.");
+                    Console.WriteLine(" ");
+                    AnsiConsole.Markup("This is a [yellow]hendecagon[/].  No chickens here, though.");
                     Console.WriteLine("For another little nugget press Enter to leave and try another one!");
+                    Console.WriteLine(" ");
                     break;
                 case "12":
-                    Console.WriteLine("The dirty-dozen-sided dodecagon, eh?  Some call them duodecagons, but I'm not one of them.");
+                    Console.WriteLine(" ");
+                    AnsiConsole.Markup("The dirty-dozen-sided [yellow]dodecagon[/], eh?  Some call them duodecagons, but I'm not one of them.");
                     Console.WriteLine("Press enter for a baker's dozen!  That's the extent of my knowledge.");
+                    Console.WriteLine(" ");
                     break;
-                case "exit":
+                case "Exit":
                     exitCondition.ToExit = true;
                     break;
             }

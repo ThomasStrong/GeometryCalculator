@@ -62,7 +62,7 @@ namespace Geometry_Calculator
                     nonagon.NonaMethod = Console.ReadLine().ToLower();
                     Nonagon.NonaMethodHandler(nonagon.NonaMethod, exitCondition);
                     break;
-                case 0:
+                case 0:                    
                     Other.OtherMethodHandler(Other.OtherOptionsMenu(), exitCondition);
                     break;
                 default:
