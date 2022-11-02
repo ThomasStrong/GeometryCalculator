@@ -27,6 +27,7 @@ namespace Geometry_Calculator
                 decimal quadArea = quadH * quadW;
                 Console.WriteLine("The area of your rectangle is: " + quadArea + " squared units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else if (quadHW.Length == 1)
             {
@@ -35,10 +36,12 @@ namespace Geometry_Calculator
                 decimal squareArea = quadSquare * quadSquare;
                 Console.WriteLine("The area of your rectangle is: " + squareArea + " squared units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else
             {
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
         }
 
@@ -54,6 +57,7 @@ namespace Geometry_Calculator
                 decimal squarePerimeter = squareSide * 4;
                 Console.WriteLine("The perimeter of your square is: " + squarePerimeter + " units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else if (quadP.Length == 2)
             {
@@ -62,6 +66,7 @@ namespace Geometry_Calculator
                 decimal rectPerimeter = rectH * 2 + rectW * 2;
                 Console.WriteLine("The perimeter of your rectangle is: " + rectPerimeter + " units.");
                 Console.WriteLine("That'll do. Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else if (quadP.Length == 4)
             {
@@ -72,6 +77,7 @@ namespace Geometry_Calculator
                 decimal quadPerim = quadOne + quadTwo + quadThree + quadFour;
                 Console.WriteLine("The perimeter of your quadrilateral is: " + quadPerim + " units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else
             {

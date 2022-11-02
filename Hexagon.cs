@@ -22,6 +22,7 @@ namespace Geometry_Calculator
             double hexArea = (3 * Math.Sqrt(3) / 2) * Math.Pow(sideLength, 2);
             Console.WriteLine("The area of your regular hexagon is: " + Math.Round(hexArea, 2) + " units.  (Rounded to hundredths)");
             Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+            Console.ReadLine();
         }
 
         public static void CalcPerimeter()
@@ -41,6 +42,7 @@ namespace Geometry_Calculator
                 decimal hexPerimeter = hexX + hexY + hexZ + hexA + hexB + hexC;
                 Console.WriteLine("The perimeter of your hexagon is: " + hexPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else
             {

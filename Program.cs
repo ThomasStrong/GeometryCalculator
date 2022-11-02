@@ -49,7 +49,6 @@ namespace Geometry_Calculator
                 {
                     Console.WriteLine("Fantastic!  Now, let's see...");
                     ShapeSelector.ShapeHandler(numberSides, exitCondition);
-
                 }
             }
         }

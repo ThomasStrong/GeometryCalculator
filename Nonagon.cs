@@ -26,6 +26,7 @@ namespace Geometry_Calculator
             double octArea = (nonagonCoefficientA * Math.Pow(sideLength, 2)) * nonagonCoefficientB;
             Console.WriteLine("The area of your regular nonagon is: " + Math.Round(octArea, 2) + " units.  (Rounded to hundredths)");
             Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+            Console.ReadLine();
         }
 
         public static void CalcPerimeter()
@@ -48,10 +49,11 @@ namespace Geometry_Calculator
                 decimal nonPerimeter = nonX + nonY + nonZ + nonA + nonB + nonC + nonD + nonE + nonF;
                 Console.WriteLine("The perimeter of your nonagon is: " + nonPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else
             {
-                Console.WriteLine("I needed none side!  Haha, anyway, I did need 9 sides.  Press [Enter] to leave.");
+                Console.WriteLine("I needed none sides!  Haha, anyway, I did need 9 sides.  Press [Enter] to leave.");
             }
         }
 

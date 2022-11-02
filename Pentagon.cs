@@ -21,6 +21,7 @@ namespace Geometry_Calculator
             double pentaArea = 0.25 * Math.Sqrt(5 * (5 + 2 * Math.Sqrt(5))) * Math.Pow(sideLength, 2);
             Console.WriteLine("The area of your pentagon is: " + Math.Round(pentaArea, 2) + " units.  (Rounded to hundredths)");
             Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+            Console.ReadLine();
         }
 
         public static void CalcPerimeter()
@@ -39,6 +40,7 @@ namespace Geometry_Calculator
                 decimal pentaPerimeter = pentaX + pentaY + pentaZ + pentaA + pentaB;
                 Console.WriteLine("The perimeter of your pentagon is: " + pentaPerimeter + " units.");
                 Console.WriteLine("That'll do.  Press [Enter] to continue, or type 'Exit' to leave.");
+                Console.ReadLine();
             }
             else
             {
